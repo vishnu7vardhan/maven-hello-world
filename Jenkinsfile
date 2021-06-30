@@ -7,6 +7,9 @@ pipeline {
             }
         }
         stage('Compile') {
+            when {
+                branch "main"
+            }
             steps {
                 echo 'I am in compile stage'
             }
