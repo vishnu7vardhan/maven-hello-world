@@ -2,13 +2,19 @@ pipeline {
     agent any
     stages {
         stage('Clone') {
-            checkout scm
+            steps {
+                checkout scm
+            }
         }
         stage('Compile') {
-            echo 'I am in compile stage'
+            steps {
+                echo 'I am in compile stage'
+            }
         }
         stage('Test') {
-            echo 'I am in test stage'
+            steps {
+                echo 'I am in test stage'
+            }
         }
     }
 }
