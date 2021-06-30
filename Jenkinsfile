@@ -15,9 +15,6 @@ pipeline {
             }
         }
         stage('Unit Test') {
-	    when {
-	        branch "development"
-		}
             steps {
                 echo 'I am in test stage'
             }
